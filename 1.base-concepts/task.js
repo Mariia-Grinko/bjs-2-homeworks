@@ -17,8 +17,16 @@ function solveEquation(a, b, c) {
     return arr; // array
 }
 
+// task 2
+
 function calculateTotalMortgage(percent, contribution, amount, date) {
     let totalAmount;
+    let dateEnd = new Date(date);
+    let startDate = new Date();
+    let body = amount - contribution;
+
+
+
     if (typeof percent !== "number") {
         percent = +percent;
     }
@@ -29,7 +37,6 @@ function calculateTotalMortgage(percent, contribution, amount, date) {
         amount = +amount;
     }
 
-
-
     return totalAmount;
 }
+calculateTotalMortgage(7, 10000, 1000000, '12.08.2021')

@@ -25,12 +25,12 @@ Student.prototype.addMarks = function(...rest) {
 
 Student.prototype.getAverage = function() {
     let sum = 0;
-    sum = marks.map((element) => { return sum + element; });
+    sum = this.marks.map((element) => { return sum + element; });
     return sum / this.marks.length;
 }
 
 Student.prototype.exclude = function(reason) {
-    delete Student.subject;
-    delete Student.marks;
+    delete this.subject;
+    delete this.marks;
     this.excluded = reason;
 }
